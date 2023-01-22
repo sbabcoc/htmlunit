@@ -58,6 +58,7 @@ import net.sourceforge.htmlunit.corejs.javascript.Undefined;
  * @author Frank Danek
  * @author Atsushi Nakagawa
  * @author Thorsten Wendelmuth
+ * @author Scott Babcock
  */
 @JsxClass
 public class Event extends HtmlUnitScriptable {
@@ -445,6 +446,7 @@ public class Event extends HtmlUnitScriptable {
 
     /** The webkitfullscreenerror event type, triggered by {@code webkitfullscreenerror} event handlers. */
     public static final String TYPE_WEBKITFULLSCREENERROR = "webkitfullscreenerror";
+    
     /** The copy event type, triggered by {@code copy} event handlers. */
     public static final String TYPE_COPY = "copy";
 
@@ -535,6 +537,9 @@ public class Event extends HtmlUnitScriptable {
      */
     public static final String TYPE_MSSITEMODEJUMPLISTITEMREMOVED = "mssitemodejumplistitemremoved";
 
+    /** The slot change event type, triggered by {@code onslotchange} event handlers. */
+    public static final String TYPE_SLOT_CHANGE = "slotchange";
+    
     /** No event phase. */
     @JsxConstant({CHROME, EDGE, FF, FF_ESR})
     public static final short NONE = 0;
